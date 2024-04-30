@@ -1,0 +1,22 @@
+.custom-select {
+    color: white;
+    background-color: #be4ebc; /* Green */
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 50%;
+  }
+  
+  .custom-select option {
+    background-color: #be4ebc; /* Green */
+    color: white;
+    
+  }
+  
+  /* Custom styling for when the select is clicked */
+  .custom-select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #be4ebc; /* Green */
+    
+  }
+  
