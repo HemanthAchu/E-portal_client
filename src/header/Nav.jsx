@@ -41,7 +41,7 @@ hem()
               <Link to="/user-home"> <Button className='me-2  mb-1'>Services</Button></Link>
               <Link to="/compliant-status"> <Button className='me-2  mb-1'>Compliants</Button></Link>
               <Link to="/waste-status"> <Button className='me-2  mb-1'>Waste reports</Button></Link>
-              <Link to="/"> <Button className='me-2  mb-1'>About</Button></Link>
+              <Link to="/adminStatus"> <Button className='me-2  mb-1'>Admin Status</Button></Link>
              
              <Button onClick={handlelogin} className=' btn-info me-2  mb-1'>logOut</Button>
             </Nav>:<></>}

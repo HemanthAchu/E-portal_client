@@ -16,7 +16,7 @@ pendingStatus:""
 
 })
 
-
+console.log(fileComplaint);
   
 const seun = JSON.parse(sessionStorage.getItem("existingUser"))
 const token = sessionStorage.getItem("token").split(1,15)[1]
@@ -56,9 +56,9 @@ if(token){
     "Authorization":`Bearer ${token}`
   }
   try{
-
+console.log(reqBody);
     const result =await addFileComplaintAPI(reqBody,reqHeader)
-    console.log(result);
+    console.log(result,200);
     if(result.status==200){
       toast.success("success")
     setfileComplaint({
@@ -97,7 +97,7 @@ if(token){
         <Form.Control
           as="textarea"
           placeholder="Leave a comment here"
-          style={{ height: '100px' }} value={fileComplaint.complaint}     onChange={(e)=>setfileComplaint({...fileComplaint,complaint:e.target.value})}
+          style={{ height: '100px' }} value={fileComplaint.complaint}    onChange={(e)=>setfileComplaint({...fileComplaint,complaint:e.target.value})}
         />
       </FloatingLabel>
 

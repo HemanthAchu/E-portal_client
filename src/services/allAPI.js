@@ -33,3 +33,13 @@ export const removeComplaintAPI= async(id,reqHeader)=>{
     return await commonAPI('DELETE',`${SERVER_URL}/removeComplaint/${id}`,{},reqHeader)
 }
 
+export const getproduct=async(reqHeader)=>{
+    return await commonAPI('GET',`${SERVER_URL}/onlines`,reqHeader)
+}
+
+export const EditProductAPI =async(id,reqBody)=>{
+    return await commonAPI('PUT',`${SERVER_URL}/editUser/${id}`,reqBody)
+}
+export const EditCommentAPI =async(id,reqBody)=>{
+    return await commonAPI('PUT',`${SERVER_URL}/editUser/${id}`,reqBody)
+}

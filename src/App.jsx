@@ -12,6 +12,7 @@ import WasteStatus from './comonent/WasteStatus'
 import FileCompliant from './comonent/File-Compliant'
 import ReportWaste from './comonent/ReportWaste'
 import { useState } from 'react'
+import AdminStatus from './comonent/AdminStatus'
 function App() {
   
 const [user,setuser]=useState('')
@@ -27,6 +28,7 @@ const [user,setuser]=useState('')
 <Route path='/compliant-status' element={<Complaints/>}/>
 <Route path='/login' element={<Login setuser={setuser} />}/>
 <Route path='/register' element={<Login  insideRegister  />}/>
+<Route path='/adminStatus' element={<AdminStatus/>} />
 </Routes>
 <Footer/>
 </>
